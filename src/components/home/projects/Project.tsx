@@ -24,10 +24,8 @@ export default function Project({
             className="size-full object-cover"
           />
         </figure>
-        <div className="mt-8 md:mt-0 flex items-center justify-between">
-          <h3 className="text-2xl md:text-3xl lg:text-5xl group-hover:pl-5 transition-all duration-500">
-            {project.name}
-          </h3>
+        <div className="mt-8 md:mt-0 flex items-center justify-between pr-3 group-hover:pl-5 transition-all duration-500">
+          <h3 className="text-2xl md:text-3xl lg:text-5xl ">{project.name}</h3>
           <IconHoverFlip size={7} Icon={HiArrowUpRight} />
         </div>
       </Link>

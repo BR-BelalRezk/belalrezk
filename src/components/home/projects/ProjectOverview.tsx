@@ -33,7 +33,7 @@ export default function ProjectOverview({
   }, [isPresent, quoteAnimate, quoteExit, citeAnimate, citeExit, safeToRemove]);
 
   return (
-    <li className="md:flex md:gap-8 lg:gap-10 lg:items-center">
+    <li className="md:flex md:gap-8 lg:gap-10 md:items-center">
       <figure className="aspect-video flex-none md:w-1/2 relative bg-stone-300">
         <motion.div
           className=" absolute h-full bg-stone-500 z-40"
@@ -58,7 +58,7 @@ export default function ProjectOverview({
           />
         </motion.div>
       </figure>
-      <blockquote className="text-lg sm:text-2xl md:text-xl lg:text-2xl xl:text-4xl mt-8 md:mt-0">
+      <blockquote className="text-lg sm:text-2xl md:text-base lg:text-2xl xl:text-4xl mt-8 md:mt-0">
         <span ref={quoteScope}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error
           praesentium non, corrupti natus harum rerum labore sed neque quidem.

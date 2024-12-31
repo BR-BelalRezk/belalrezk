@@ -14,8 +14,8 @@ export default function Footer() {
             <div className="size-3 rounded-full bg-green-500 animate-pulse" />
             <span className="uppercase">let&apos;s work together</span>
           </div>
-          <div className="grid md:grid-cols-3 md:items-center">
-            <div className="md:col-span-2">
+          <div className="grid sm:grid-cols-3 md:items-center">
+            <div className="sm:col-span-2">
               <H2
                 text="Enough talk. Let's make something great together."
                 className="text-3xl sm:text-4xl md:text-5xl  lg:text-6xl xl:text-7xl 2xl:8xl mt-8  font-extralight"
@@ -27,14 +27,14 @@ export default function Footer() {
                 className="mt-8"
               />
             </div>
-            <ul className="flex flex-col gap-8 mt-16 md:mt-0 md:items-end">
+            <ul className="flex flex-col gap-8 mt-16 sm:mt-0 sm:items-end">
               {contacts.map((item) => (
                 <li key={item.name}>
                   <Link href={item.url} target={"_blank"}>
                     <Button
                       text={item.name}
                       iconAfter={
-                        <item.icon className="text-3xl absolute left-[calc(100%+10px)] hidden md:block" />
+                        <item.icon className="text-3xl absolute left-[calc(100%+10px)] hidden sm:block" />
                       }
                       variant="text"
                       className="text-sm"

@@ -6,8 +6,32 @@ import appleIphone from "@/assets/projects/appleIphone.png";
 import appleTv from "@/assets/projects/appleTv.png";
 import caseCobra from "@/assets/projects/caseCobra.png";
 
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaWhatsapp, FaMeta } from "react-icons/fa6";
+import { BiLogoNetlify, BiLogoTypescript } from "react-icons/bi";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaReact,
+  FaSass,
+  FaGitAlt,
+} from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiNextui,
+  SiPlaycanvas,
+  SiReacthookform,
+  SiReactquery,
+  SiReactrouter,
+  SiRedux,
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiUdemy,
+  SiVercel,
+} from "react-icons/si";
 import { MdEmail } from "react-icons/md";
+import { IoLogoJavascript } from "react-icons/io";
 
 export const navbarItems = [
   "about",
@@ -105,5 +129,107 @@ export const contacts = [
 
     icon: FaWhatsapp,
     url: "https://wa.me/+201064467975",
+  },
+] as const;
+
+export const skills = [
+  {
+    label: "HTML",
+    icon: FaHtml5,
+  },
+  {
+    label: "CSS",
+    icon: FaCss3Alt,
+  },
+  {
+    label: "Bootstrap",
+    icon: FaBootstrap,
+  },
+  {
+    label: "Tailwind",
+    icon: SiTailwindcss,
+  },
+  {
+    label: "Styled Components",
+    icon: SiStyledcomponents,
+  },
+  {
+    label: "Sass",
+    icon: FaSass,
+  },
+  {
+    label: "Javascript",
+    icon: IoLogoJavascript,
+  },
+  {
+    label: "Typescript",
+    icon: BiLogoTypescript,
+  },
+  {
+    label: "React.js",
+    icon: FaReact,
+  },
+  {
+    label: "React Router",
+    icon: SiReactrouter,
+  },
+  {
+    label: "Redux / RTK",
+    icon: SiRedux,
+  },
+  {
+    label: "React Query",
+    icon: SiReactquery,
+  },
+  {
+    label: "React Hook Form",
+    icon: SiReacthookform,
+  },
+  {
+    label: "Next.js",
+    icon: SiNextdotjs,
+  },
+  {
+    label: "Next / UI",
+    icon: SiNextui,
+  },
+  {
+    label: "Framer Motion",
+    icon: TbBrandFramerMotion,
+  },
+  {
+    label: "PlayCanvas",
+    icon: SiPlaycanvas,
+  },
+  {
+    label: "Git",
+    icon: FaGitAlt,
+  },
+  {
+    label: "Github",
+    icon: FaGithub,
+  },
+  {
+    label: "Netlify",
+    icon: BiLogoNetlify,
+  },
+  {
+    label: "Vercel",
+    icon: SiVercel,
+  },
+] as const;
+
+export const certificates = [
+  {
+    label: "Meta Front-End Developer Specialization",
+    icon: FaMeta,
+    link: "https://www.credly.com/badges/e057636e-0b9c-4554-9480-80ba90937751/public_url",
+    // img: meta,
+  },
+  {
+    label: "The Ultimate React Course: Jonas Schmedtmann",
+    icon: SiUdemy,
+    link: "https://ude.my/UC-cfa9b3b2-7683-49a0-b685-70cb2d43b1f0/",
+    // img: udemy,
   },
 ] as const;

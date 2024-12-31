@@ -59,7 +59,7 @@ export default function FAQ({
             }}
             exit={{
               height: 0,
-              transition: { duration: 0.5, ease: "easeOut", delay: 0.2 },
+              transition: { duration: 0.5, ease: "easeOut", delay: 0.3 },
             }}
             className="overflow-hidden px-0.5 sm:px-2.5 md:px-5 lg:px-8"
           >
@@ -68,7 +68,7 @@ export default function FAQ({
               animate={{
                 opacity: 1,
                 y: 0,
-                transition: { duration: 0.5, ease: "easeOut", delay: 0.6 },
+                transition: { duration: 0.5, ease: "easeOut", delay: 0.3 },
               }}
               exit={{
                 opacity: 0,
