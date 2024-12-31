@@ -22,7 +22,7 @@ export default function Logo() {
           ></path>
         </g>
       </svg>
-      <span className="text-xl font-bold lowercase -ml-1.5 text-stone-950">
+      <span className="text-xl font-bold lowercase -ml-1.5 text-stone-500">
         elal_rezk
       </span>
     </Link>
