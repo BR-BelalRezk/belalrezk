@@ -21,7 +21,7 @@ export default function SectionTitle({ text }: { text: string }) {
     if (isInView) {
       enterAnimation();
     }
-  }, [isInView, enterAnimation]);
+  }, [isInView]);
   return (
     <h2
       ref={scope}
