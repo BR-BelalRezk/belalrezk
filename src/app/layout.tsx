@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ActiveSection from "@/context/ActiveSection";
-import Lenis from "@/components/ui/Lenis";
+import Lenis from "@/components/layout/Lenis";
 
 const archivo = Archivo({
   display: "swap",

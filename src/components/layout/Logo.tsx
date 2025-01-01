@@ -1,15 +1,15 @@
 "use client";
+import { useLenis } from "lenis/react";
 import Link from "next/link";
 
 export default function Logo() {
+  const lenis = useLenis();
   return (
     <Link
       onClick={(e) => {
         const url = new URL(e.currentTarget.href);
         const hash = url.hash;
-        const target = document.querySelector(hash);
-        if (!target) return;
-        target.scrollIntoView({ behavior: "smooth" });
+        lenis?.scrollTo(hash, { duration: 2.5 });
       }}
       href={"#home"}
       className="flex items-end justify-center z-50"

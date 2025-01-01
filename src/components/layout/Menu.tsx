@@ -13,6 +13,7 @@ import { navbarItems, transition } from "@/constants";
 import { useActiveSection } from "@/context/ActiveSection";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
+import { useLenis } from "lenis/react";
 
 type MenuContextType = {
   toggle: boolean;
@@ -146,14 +147,13 @@ const MenuListItem = ({
 } & React.HTMLAttributes<HTMLLIElement>) => {
   const { activeSection, setActiveSection } = useActiveSection();
   const { setToggle, isDesktop } = useMenu();
+  const lenis = useLenis();
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     setActiveSection(sectionName);
     const url = new URL(e.currentTarget.href);
     const hash = url.hash;
-    const target = document.querySelector(hash);
-    if (!target) return;
-    target.scrollIntoView({ behavior: "smooth" });
+    lenis?.scrollTo(hash, { duration: 2.5 });
     if (!isDesktop) {
       setToggle(false);
     }
