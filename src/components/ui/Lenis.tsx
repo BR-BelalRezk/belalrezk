@@ -7,7 +7,7 @@ export default function Lenis({ children }: { children: React.ReactNode }) {
   const lenisRef = useRef<LenisRef | null>(null);
 
   useEffect(() => {
-    function update(time: any) {
+    function update(time: number) {
       lenisRef.current?.lenis?.raf(time * 1000);
     }
 
