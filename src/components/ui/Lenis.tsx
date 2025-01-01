@@ -4,7 +4,7 @@ import { LenisRef, ReactLenis } from "lenis/react";
 import { useEffect, useRef } from "react";
 
 export default function Lenis({ children }: { children: React.ReactNode }) {
-  const lenisRef = useRef<LenisRef | null>(null);
+  const lenisRef = useRef<LenisRef>(null);
 
   useEffect(() => {
     function update(time: number) {
