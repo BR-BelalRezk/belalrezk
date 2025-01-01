@@ -34,9 +34,9 @@ import { IoLogoJavascript } from "react-icons/io";
 
 export const navbarItems = [
   "about",
+  "projects",
   "certificates",
   "skills",
-  "projects",
   "faqs",
 ] as const;
 

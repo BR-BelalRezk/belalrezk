@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ActiveSection from "@/context/ActiveSection";
+import Lenis from "@/components/ui/Lenis";
 
 const archivo = Archivo({
   display: "swap",
@@ -26,20 +27,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="!scroll-smooth"
-      style={{ scrollBehavior: "smooth", scrollbarWidth: "none" }}
-    >
-      <body
-        className={`${archivo.variable} font-archivo antialiased overflow-x-hidden bg-stone-200 text-stone-900`}
-      >
-        <ActiveSection>
-          <Header />
-          <main>{children}</main>
-        </ActiveSection>
-        <Footer />
-      </body>
+    <html lang="en" style={{ scrollbarWidth: "none" }}>
+      <Lenis>
+        <body
+          className={`${archivo.variable} font-archivo antialiased overflow-x-hidden bg-stone-200 text-stone-900`}
+        >
+          <ActiveSection>
+            <Header />
+            <main>{children}</main>
+          </ActiveSection>
+          <Footer />
+        </body>
+      </Lenis>
     </html>
   );
 }

@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html.lenis,
+html.lenis body {
+  @apply h-auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  @apply overscroll-contain;
+}
+.lenis.lenis-stopped {
+  @apply overflow-clip;
+}
+.lenis.lenis-smooth iframe {
+  @apply pointer-events-none;
+}
+
 .line {
   @apply overflow-hidden;
 }
