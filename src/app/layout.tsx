@@ -27,10 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      style={{ scrollbarWidth: "none", scrollBehavior: "smooth" }}
-    >
+    <html lang="en" style={{ scrollbarWidth: "none" }}>
       <Lenis>
         <body
           className={`${archivo.variable} font-archivo antialiased overflow-x-hidden bg-stone-200 text-stone-900`}
