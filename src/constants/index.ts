@@ -20,7 +20,6 @@ import {
 import {
   SiNextdotjs,
   SiNextui,
-  SiPlaycanvas,
   SiReacthookform,
   SiReactquery,
   SiReactrouter,
@@ -35,9 +34,9 @@ import { IoLogoJavascript } from "react-icons/io";
 
 export const navbarItems = [
   "about",
-  "certificats",
-  "projects",
+  "certificates",
   "skills",
+  "projects",
   "faqs",
 ] as const;
 
@@ -196,10 +195,6 @@ export const skills = [
   {
     label: "Framer Motion",
     icon: TbBrandFramerMotion,
-  },
-  {
-    label: "PlayCanvas",
-    icon: SiPlaycanvas,
   },
   {
     label: "Git",

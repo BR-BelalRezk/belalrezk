@@ -1,8 +1,19 @@
+"use client";
 import Link from "next/link";
 
 export default function Logo() {
   return (
-    <Link href={"#home"} className="flex items-end justify-center z-50">
+    <Link
+      onClick={(e) => {
+        const url = new URL(e.currentTarget.href);
+        const hash = url.hash;
+        const target = document.querySelector(hash);
+        if (!target) return;
+        target.scrollIntoView({ behavior: "smooth" });
+      }}
+      href={"#home"}
+      className="flex items-end justify-center z-50"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="50"

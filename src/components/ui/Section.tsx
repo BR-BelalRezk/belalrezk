@@ -26,7 +26,7 @@ export default function Section({
   return (
     <section
       ref={ref}
-      id={id}
+      id={id || "home"}
       className={twMerge("py-24 md:py-32 lg:py-40", className)}
       {...rest}
     >

@@ -8,3 +8,6 @@
 .word {
   @apply translate-y-full;
 }
+.char {
+  @apply opacity-0;
+}

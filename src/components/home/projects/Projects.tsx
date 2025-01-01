@@ -13,7 +13,7 @@ export default function Projects() {
       <div className="container">
         <SectionTitle text="Projects" />
         <ActiveProject>
-          <ul className="mt-10 md:mt-16 lg:mt-20">
+          <ul>
             {projects.map((project, index) => (
               <ProjectMouseHandler key={project.name} index={index}>
                 <Project key={project.name} project={project} />
