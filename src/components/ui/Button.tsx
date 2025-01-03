@@ -26,7 +26,11 @@ export default function Button({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
     >
-      <Link download={download} href={href} target="_blank">
+      <Link
+        download={download}
+        href={href}
+        target={href === "#projects" ? "_self" : "_blank"}
+      >
         <button
           className={twMerge(
             " h-10 px-5 rounded-xl group relative transition-all duration-500 border border-red-orange-500 uppercase inline-flex items-center justify-center gap-2.5",
