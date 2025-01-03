@@ -2,8 +2,6 @@ import layers from "@/assets/projects/layers.png";
 import xora from "@/assets/projects/xora.png";
 import zentry from "@/assets/projects/zentry.png";
 import spherealAI from "@/assets/projects/spherealAI.png";
-import appleIphone from "@/assets/projects/appleIphone.png";
-import appleTv from "@/assets/projects/appleTv.png";
 import caseCobra from "@/assets/projects/caseCobra.png";
 
 import { FaGithub, FaLinkedinIn, FaWhatsapp, FaMeta } from "react-icons/fa6";
