@@ -16,8 +16,9 @@ export default function Hero() {
               <H1 text="Crafting digital experiences through code and creative design" />
               <div className="flex mt-10 gap-5 items-center">
                 <Button
-                  text="view my work"
-                  href={"#projects"}
+                  text="Resume"
+                  href={""}
+                  download
                   iconAfter={
                     <IconHoverFlip size={6} Icon={HiChevronDoubleDown} />
                   }
