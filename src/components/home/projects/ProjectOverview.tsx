@@ -59,12 +59,7 @@ export default function ProjectOverview({
         </motion.div>
       </figure>
       <blockquote className="text-lg sm:text-2xl md:text-base lg:text-2xl xl:text-4xl mt-8 md:mt-0">
-        <span ref={quoteScope}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error
-          praesentium non, corrupti natus harum rerum labore sed neque quidem.
-          Ut error corrupti esse. Voluptas ea quaerat accusamus laudantium
-          cumque.
-        </span>
+        <span ref={quoteScope}>{project.description}</span>
         <cite
           ref={citeScope}
           className="mt-4 text-sm sm:text-base md:mt-8 md:text-lg not-italic block"

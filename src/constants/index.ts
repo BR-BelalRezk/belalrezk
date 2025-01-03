@@ -51,36 +51,36 @@ export const projects = [
     name: "Layers",
     image: layers,
     link: "https://layers-br.vercel.app/",
+    description:
+      "Layers simplifies design with real-time collaboration, prototyping, and integrations, keeping creators in flow.",
   },
   {
     name: "Xora",
     image: xora,
     link: "https://xora-br.vercel.app/",
+    description:
+      "Xora automates video editing tasks, boosting productivity with AI, cloud processing, and secure collaboration.",
   },
   {
     name: "Zentry",
     image: zentry,
     link: "https://zentry-br.vercel.app/",
+    description:
+      "Zentry unites gaming and NFTs, offering rewards, social hubs, and AI tools for an immersive Play Economy.",
   },
   {
     name: "Sphereal.AI",
     image: spherealAI,
     link: "https://sphereal-ai-br.vercel.app/",
-  },
-  {
-    name: "Apple Iphone",
-    image: appleIphone,
-    link: "https://appleiphone.vercel.app/",
-  },
-  {
-    name: "Apple TV",
-    image: appleTv,
-    link: "https://appletv-br.vercel.app/",
+    description:
+      "Sphereal enhances workflows with AI, integrating tools like Slack and GitHub, offering flexible pricing plans.",
   },
   {
     name: "Case Cobra",
     image: caseCobra,
     link: "https://casecobra-br.vercel.app/",
+    description:
+      "CaseCobra lets users design personalized phone cases with custom photos, materials, and durable prints.",
   },
 ] as const;
 
