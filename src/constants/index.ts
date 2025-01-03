@@ -4,6 +4,9 @@ import zentry from "@/assets/projects/zentry.png";
 import spherealAI from "@/assets/projects/spherealAI.png";
 import caseCobra from "@/assets/projects/caseCobra.png";
 
+import meta from "@/assets/images/meta.png";
+import udemy from "@/assets/images/udemy.jpg";
+
 import { FaGithub, FaLinkedinIn, FaWhatsapp, FaMeta } from "react-icons/fa6";
 import { BiLogoNetlify, BiLogoTypescript } from "react-icons/bi";
 import { TbBrandFramerMotion } from "react-icons/tb";
@@ -215,14 +218,12 @@ export const skills = [
 export const certificates = [
   {
     label: "Meta Front-End Developer Specialization",
-    icon: FaMeta,
     link: "https://www.credly.com/badges/e057636e-0b9c-4554-9480-80ba90937751/public_url",
-    // img: meta,
+    img: meta,
   },
   {
     label: "The Ultimate React Course: Jonas Schmedtmann",
-    icon: SiUdemy,
     link: "https://ude.my/UC-cfa9b3b2-7683-49a0-b685-70cb2d43b1f0/",
-    // img: udemy,
+    img: udemy,
   },
 ] as const;

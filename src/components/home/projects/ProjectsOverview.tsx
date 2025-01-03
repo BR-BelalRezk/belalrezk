@@ -8,7 +8,7 @@ export default function ProjectsOverview() {
   return (
     <Section id="projects">
       <H2Cross text="Some personal projects from my past clients" />
-      <div className="container !max-w-full">
+      <div className="container">
         <ActiveProjectOverView>
           <ul className="mt-20 w-full">
             <ProjectsOverViewList />

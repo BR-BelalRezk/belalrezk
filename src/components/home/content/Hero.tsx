@@ -12,11 +12,12 @@ export default function Hero() {
       <HeroImageScroll>
         <div className="grid md:grid-cols-12 md:h-screen items-stretch sticky top-0">
           <div className="md:col-span-7 flex flex-col justify-center">
-            <div className="container !max-w-full">
+            <div className="container">
               <H1 text="Crafting digital experiences through code and creative design" />
-              <div className="flex flex-col mt-10 items-start gap-5 md:flex-row md:items-center">
+              <div className="flex mt-10 gap-5 items-center">
                 <Button
                   text="view my work"
+                  href={"#projects"}
                   iconAfter={
                     <IconHoverFlip size={6} Icon={HiChevronDoubleDown} />
                   }
@@ -28,6 +29,7 @@ export default function Hero() {
                   variant="text"
                   className="capitalize"
                   text="let's talk"
+                  href={"https://wa.me/+201064467975"}
                   delay={2.2}
                 />
               </div>

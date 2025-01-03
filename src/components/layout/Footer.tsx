@@ -1,4 +1,4 @@
-import { HiArrowUpRight } from "react-icons/hi2";
+import { HiArrowDown } from "react-icons/hi2";
 import Button from "../ui/Button";
 import Link from "next/link";
 import { H2 } from "../ui/Heading";
@@ -21,25 +21,26 @@ export default function Footer() {
                 className="text-3xl sm:text-4xl md:text-5xl  lg:text-6xl xl:text-7xl 2xl:8xl mt-8  font-extralight"
               />
               <Button
-                text="projects"
+                text="Resume"
+                download
+                href={""}
                 variant="secondary"
-                iconAfter={<IconHoverFlip size={5} Icon={HiArrowUpRight} />}
+                iconAfter={<IconHoverFlip size={5} Icon={HiArrowDown} />}
                 className="mt-8"
               />
             </div>
             <ul className="flex flex-col gap-8 mt-16 sm:mt-0 sm:items-end">
               {contacts.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.url} target={"_blank"}>
-                    <Button
-                      text={item.name}
-                      iconAfter={
-                        <item.icon className="text-3xl absolute left-[calc(100%+10px)] hidden sm:block" />
-                      }
-                      variant="text"
-                      className="text-sm"
-                    />
-                  </Link>
+                  <Button
+                    href={item.url}
+                    text={item.name}
+                    iconAfter={
+                      <item.icon className="text-3xl absolute left-[calc(100%+10px)] hidden sm:block" />
+                    }
+                    variant="text"
+                    className="text-sm"
+                  />
                 </li>
               ))}
             </ul>
