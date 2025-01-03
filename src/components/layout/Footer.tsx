@@ -1,6 +1,5 @@
 import { HiArrowDown } from "react-icons/hi2";
 import Button from "../ui/Button";
-import Link from "next/link";
 import { H2 } from "../ui/Heading";
 import IconHoverFlip from "../ui/IconHoverFlip";
 import { contacts } from "@/constants";

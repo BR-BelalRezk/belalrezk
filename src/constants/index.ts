@@ -7,7 +7,7 @@ import caseCobra from "@/assets/projects/caseCobra.png";
 import meta from "@/assets/images/meta.png";
 import udemy from "@/assets/images/udemy.jpg";
 
-import { FaGithub, FaLinkedinIn, FaWhatsapp, FaMeta } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import { BiLogoNetlify, BiLogoTypescript } from "react-icons/bi";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import {
@@ -27,7 +27,6 @@ import {
   SiRedux,
   SiStyledcomponents,
   SiTailwindcss,
-  SiUdemy,
   SiVercel,
 } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
